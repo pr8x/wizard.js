@@ -9,8 +9,7 @@ text-align: center;
 }
 
 .banner-subscript {
-	font-family: Avenir;
-	font-size: 30px;
+	font: 25px AvenirNext-UltraLight;
 	color: #D7D7D7;
 	display: block;
 	
@@ -34,7 +33,7 @@ text-align: center;
 /* @group form */
 
 form {
-	padding: 100px;
+	padding: 40px;
 	width: 300px;
 	margin: 0 auto;
 }
@@ -105,7 +104,6 @@ input[type=submit]:hover {
 	background: #4D7267;
 	color: white;
 }
-
 
 a.next,a.back {
 	margin-top: 20px;
