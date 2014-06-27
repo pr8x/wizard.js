@@ -5,7 +5,6 @@ $.fn.wizard = function(options) {
 	    nextButton: 'Next',
 	  }; 
 
- 
   	var settings = $.extend({}, defaults, options); 
 
     var fields = $(this).find('fieldset');
@@ -49,3 +48,5 @@ $.fn.wizard = function(options) {
 	   
     return this;
 }
+
+
