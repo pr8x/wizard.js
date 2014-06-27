@@ -1,4 +1,10 @@
-$.fn.wizard = function() {
+$.fn.wizard = function(options) {
+	 var defaults = { 
+	    nextButton:'Next',
+	    backButton:'Back'
+	  }; 
+	
+	var settings = $.extend({}, defaults, options); 
 
     var fields = $(this).find('fieldset');
     var submit = $(this).find('input[type=submit]');
@@ -11,11 +17,11 @@ $.fn.wizard = function() {
     	$(el).data("index", index);
     
        	if (index < fields.length-1) {
-    		$(el).append("<a class='next'>Next</a>");
+    		$(el).append("<a class='next'></a>").text(settings.nextButton);
     	}
     	
     	if (index > 0) {
-    		$(el).append("<a class='back'>Back</a>");
+    		$(el).append("<a class='back'></a>").text(settings.backButton);
     	}
     
     });

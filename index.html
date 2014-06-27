@@ -10,59 +10,48 @@
 	
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
 	<script src="wizard.js" type="text/javascript"></script>
-	
-	<style>
-	form {
-		width: 300px;
-		margin: 0 auto;
-	}
-	
-		fieldset {
-			outline: 0;
-			border: 0;
-			padding: 30px;
-		}
-		
-		a {
-			margin: 10px;
-			background: transparent;
-			color: green;
-			border-radius: 3px;
-			border: 1px solid green;
-			padding: 20px;
-	
-		}
-		
-		a:hover {
-			background: green;
-			color: white;
-		}
-		
-		input[type=text] {
-			border: 0;
-			background: silver;
-			padding: 10px;
-			display: block;
-		}
-		
-		
-	</style>
-	
+	<link rel="stylesheet" href="css/style.css" />
 	
 </head>
 <body>
 	
 	
+	
+	<div class="banner">
+		<img class="banner-logo" src="images/wizard.png" alt="" />	
+		<span class="banner-subscript">minimalistic form wizard</span>
+	</div>
+	
+	
+
 	<form>
-	<fieldset>
-	 <input type="text" name="123"></input>
-	</fieldset>
-	<fieldset>
-	  <input type="text" name="456"></input>
-	</fieldset>
-	<fieldset>
-	  <input type="text" name="789"></input>
-	</fieldset>
+		<span class="form-title">EXAMPLE FORM</span>
+		<fieldset>
+		 <legend>Step 1</legend>
+		 
+		 <label for="">Name</label>
+		 <input type="text" name="name"></input>
+		 
+		 <label for="">Surname</label>
+		 <input type="text" name="surname"></input>
+		</fieldset>
+		<fieldset>
+			<legend>Step 2</legend>
+		   <label for="">Name</label>
+		   <input type="password" name="password"></input>
+		  
+		   <label for="">Name</label>
+		   <input type="password" name="password2"></input>
+		</fieldset>
+		<fieldset>
+		   <legend>Step 3</legend>
+		  
+		   <label for="">Name</label>
+		   <input type="text" name="789"></input>
+		   <input type="submit" name="submit" value="Submit" />
+		</fieldset>
+		
+		
 	</form>
 	
 	

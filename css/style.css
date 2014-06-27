@@ -1,0 +1,99 @@
+@import "reset.css";
+
+.banner {
+
+background: #4D7267;
+height: 300px;
+text-align: center;
+
+}
+
+.banner-subscript {
+	font-family: Avenir-Light;
+	font-size: 36px;
+	color: #D7D7D7;
+	display: block;
+	
+}
+
+.banner-logo {
+	margin-top: 50px;
+}
+
+/* @group form */
+
+form {
+	padding: 100px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+fieldset {
+	position: relative;
+}
+
+.form-title {
+	text-align: center;
+	display: block;
+	
+	font-family: Avenir-Light;
+	font-size: 24px;
+	color: #6F6F6F;
+	line-height: 33px;
+}
+
+legend {
+	display: block;
+	color: #c1c1c1;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 3px;
+	font-family: Avenir-Light;
+	font-size: 20px;
+	
+}
+
+label {
+	display: block;
+	font-family: Avenir-Light;
+	font-size: 24px;
+	color: #6F6F6F;
+	padding: 5px;
+
+}
+
+input {
+	border: 0;
+	border-radius: 3px;
+	/* Rectangle 2: */
+	background: #ECECEC;
+	padding: 10px;
+	font-family: Avenir-Light;
+	font-size: 20px;
+	color: #6F6F6F;
+
+	width: 100%;
+}
+
+input[type=submit] {
+	margin: 10px;
+}
+
+a.next,a.back {
+	font: 16px Varela;
+	color: #646464;
+}
+
+a.next {
+	position: absolute;
+	top: -30px;
+	right: 10px;
+}
+
+a.back {
+	position: absolute;
+	top: -30px;
+	left: 10px;
+}
+
+/* @end */
