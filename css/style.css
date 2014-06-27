@@ -10,7 +10,7 @@ text-align: center;
 
 .banner-subscript {
 	font-family: Avenir-Light;
-	font-size: 36px;
+	font-size: 30px;
 	color: #D7D7D7;
 	display: block;
 	
@@ -55,11 +55,10 @@ legend {
 
 label {
 	display: block;
-	font-family: Avenir-Light;
-	font-size: 24px;
+	font: 16px Avenir;
 	color: #6F6F6F;
 	padding: 5px;
-
+	background-position: right center;
 }
 
 input {
@@ -81,19 +80,24 @@ input[type=submit] {
 
 a.next,a.back {
 	font: 16px Varela;
-	color: #646464;
 }
 
 a.next {
 	position: absolute;
 	top: -30px;
-	right: 10px;
+	right: -10px;
+
+	padding-right: 20px;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAANSAAADUgEQACRKAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAACpQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5lNJigAAAA10Uk5TAAIFMTJtcKHP4e3u9SuCLpgAAAA0SURBVBhXY2AgGrA3I3F0bhkgOKx3tyBJ5d52QHDYyJSaiIODrAzFAKIkUByK4gUUzxEBAE6PGSFjkkGtAAAAAElFTkSuQmCC09682a97ac13282fe36e3fe0146840fa') right no-repeat;
 }
 
 a.back {
 	position: absolute;
 	top: -30px;
-	left: 10px;
+	left: -10px;
+	
+	padding-left: 20px;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAANSAAADUgEQACRKAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAACdQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIpVOngAAAAx0Uk5TAAIFMTJtcKHP4e71mFbgRgAAADNJREFUGNNjYCAJWBQg2CxrNiE4XmcCkCSOIUskkCghiSSBykFRhmIAKVIBOLyA4jlCAACb2RgHcLTn/AAAAABJRU5ErkJggg==7a340fe745cb8100c95c38481720dc2b') left no-repeat;
 }
 
 /* @end */
