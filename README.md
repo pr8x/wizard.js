@@ -7,6 +7,8 @@ Simply turn any ordinary form into a wizard with navigatable steps. <br/>
 ##Get Started
 
 ```html
+<script src="wizard.js" type="text/javascript"></script>
+...
 <form>
 <fieldset>
  <input type="text" name="123"></input>
