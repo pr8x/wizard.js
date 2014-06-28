@@ -3,8 +3,7 @@ $.fn.wizard = function(options) {
 	var defaults = { 
 	    backButton: 'Back',
 	    nextButton: 'Next',
-	    willDisappear: function() { return true; },
-	    didDisappear: null,
+	    willSwitch: function() { return true; },
 	  }; 
 
   	var settings = $.extend({}, defaults, options); 
@@ -30,36 +29,32 @@ $.fn.wizard = function(options) {
     });
     
     $('.next').click(function() {
-     			var parent = $(this).closest('fieldset');
+     			var current = $(this).closest('fieldset');
+     			var next = current.next('fieldset');
      			
-     			if (!settings.willDisappear(parent)) {
+     			if (!settings.willSwitch(current,next)) {
      				return;
      			}
-    
-     			var next = $(parent).hide().next('fieldset').fadeIn(500);
      			
-     			if (settings.didDisappear)
-     				settings.didDisappear(parent);
-     			
-     			if ($(next).is(':last-of-type')) {
-     				$(submit).show();
+			    current.hide();
+			    next.fadeIn(500);
+
+     			if (next.is(':last-of-type')) {
+     				submit.show();
      			}
      		});
      		
    	$('.back').click(function() {
-	   			var parent = $(this).closest('fieldset');
+	   			var current = $(this).closest('fieldset');
+	   			var previous = current.prev('fieldset');
 	   			
-	   			if (!settings.willDisappear(parent)) {
+	   			if (!settings.willSwitch(current,previous)) {
 	   				return;
 	   			}
-	   			
-	   			$(parent).hide().prev('fieldset').fadeIn(500); 
-	   			
-	   			if (settings.didDisappear)
-	   				settings.didDisappear(parent);
-	   			
-	   			$(submit).hide();
-	   			  		
+	   			current.hide();
+	   			previous.fadeIn(500); 
+	   
+	   			submit.hide();		
 	   		});
 	   
     return this;
