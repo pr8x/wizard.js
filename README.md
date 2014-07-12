@@ -48,3 +48,10 @@ The given example will produce:
 ```
 
 Thats all you need.
+
+##Options
+| Option        | Default           | Description  |
+| ------------- |:-------------:| -----:|
+| backButton     | "Back" | title for back button |
+| nextButton      | "Next"      |   title for next button |
+| willSwitch | `function() { return true; }`      |   callback(oldPage,newPage) : return false to prevent switching steps |
