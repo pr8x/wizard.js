@@ -1,10 +1,12 @@
 wizard.js
 =========
 
-Simply turn any ordinary form into a wizard with navigatable steps. jQuery required.<br/>
+Simply turn any ordinary form into a wizard with navigatable steps.<br/>
 > No fancy features. No CSS. Highly Customizable.
 
 ##Get Started
+
+*wizard.js uses jQuery*
 
 ```html
 <script src="jquery.js" type="text/javascript"></script>
