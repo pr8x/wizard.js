@@ -54,4 +54,4 @@ Thats all you need.
 | ------------- |:-------------:| -----:|
 | backButton     | "Back" | title for back button |
 | nextButton      | "Next"      |   title for next button |
-| willSwitch | `function() { return true; }`      |   callback(oldPage,newPage) : return false to prevent switching steps |
+| willSwitch | `function() { return true; }`      |   *callback(oldPage,newPage)* : return false to prevent switching steps |
