@@ -50,6 +50,10 @@ The given example will produce:
 Thats all you need.
 
 ##Options
+```js
+$(' form ').wizard(options);
+```
+
 | Option        | Default           | Description  |
 | ------------- |:-------------:| -----:|
 | backButton     | "Back" | title for back button |
