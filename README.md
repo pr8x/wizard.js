@@ -1,7 +1,7 @@
 wizard.js
 =========
 
-Simply turn any ordinary form into a wizard with navigation steps.<br/>
+Simply turn any ordinary <pre><form></pre> into a wizard with navigation steps.<br/>
 > No fancy features. No CSS. Highly Customizable.
 
 ##Get Started
