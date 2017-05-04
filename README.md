@@ -4,7 +4,7 @@ wizard.js
 Simply turn any ordinary form into a wizard with navigation steps.<br/>
 > No fancy features. No CSS. Highly Customizable.
 
-##Get Started
+## Get Started
 
 **Requirements:** wizard.js uses jQuery
 
@@ -49,7 +49,7 @@ The given example will produce:
 
 Thats all you need.
 
-##Options
+## Options
 ```js
 $(' form ').wizard(options);
 ```
